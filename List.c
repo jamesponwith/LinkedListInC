@@ -5,7 +5,7 @@
 /*
  *
  */
-void PrintList(node_t *head) {
+void PrintAll(node_t *head) {
 	node_t *current = head;
 
 	if(head == NULL)
@@ -88,3 +88,14 @@ int RemoveEnd(node_t *head) {
 /*
  *
  */
+void FreeAll(node_t *head) {
+    node_t *current = head;
+    
+    if(head == NULL)
+        return;
+
+    while(current != NULL) {
+        free(current);
+        current = current -> next;
+	}
+}

@@ -14,8 +14,15 @@ int main() {
 	node_t *head = NULL;
 
 	AddBeg(&head, 5);
-	printf("%d\n%p\n",head->val, head->next);
+    AddEnd(head, 10);
+	AddBeg(&head, 7);
+    AddEnd(head, 9);
+    PrintAll(head);
+    printf("\n\n");
+    printf("%d\n%p\n",head->val, head->next);
 	printf("%s\n","Hello");
+    FreeAll(head);
+    PrintAll(head);
 	return 0;
 }
 

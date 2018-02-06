@@ -84,3 +84,7 @@ int RemoveEnd(node_t *head) {
 	curr_node -> next = NULL;
 	return ret;
 }
+
+/*
+ *
+ */

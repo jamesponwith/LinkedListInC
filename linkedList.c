@@ -17,7 +17,8 @@ int main() {
     AddEnd(head, 10);
 	AddBeg(&head, 7);
     AddEnd(head, 9);
-    PrintAll(head);
+    findFirst(head, 9);
+	PrintAll(head);
     printf("\n\n");
     printf("%d\n%p\n",head->val, head->next);
 	printf("%s\n","Hello");

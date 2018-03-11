@@ -88,6 +88,19 @@ int RemoveEnd(node_t *head) {
 /*
  *
  */
+node_t findFirst(node_t *head, int search_value) {
+	node_t *current = head;
+
+	while(current != NULL) {
+		if(current.value = search_value) 
+			return current;
+		current = current -> next;
+	}
+}
+
+/*
+ *
+ */
 void FreeAll(node_t *head) {
     node_t *current = head;
     
